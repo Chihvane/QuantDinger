@@ -82,6 +82,9 @@ _tmp_*.txt
 _i18n_*.txt
 backend_api_python/logs/
 backend_api_python/dist/
+# start_local.sh (no-Docker launcher): local Postgres cluster + backend pidfile
+pgdata/
+backend_api_python/qd_server.pid
 
 # MCP server build artifacts (PyPI release output, never committed)
 mcp_server/dist/

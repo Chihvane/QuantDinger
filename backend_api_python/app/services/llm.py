@@ -122,8 +122,10 @@ PROVIDER_CONFIGS = {
     },
     LLMProvider.DEEPSEEK: {
         "base_url": "https://api.deepseek.com/v1",
-        "default_model": "deepseek-chat",
-        "fallback_model": "deepseek-chat",
+        # The official DeepSeek API serves the rolling deepseek-v4-pro / deepseek-v4-flash
+        # aliases; do not pin a dated model id here.
+        "default_model": "deepseek-v4-pro",
+        "fallback_model": "deepseek-v4-pro",
     },
     LLMProvider.GROK: {
         "base_url": "https://api.x.ai/v1",
